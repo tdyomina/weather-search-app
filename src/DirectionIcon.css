@@ -1,0 +1,4 @@
+.windIcon {
+  transform: var(--angle);
+  width: 45px;
+}
