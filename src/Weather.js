@@ -18,7 +18,7 @@ export default function Weather(props) {
       description: response.data.condition.description,
       wind: response.data.wind.speed,
       city: response.data.city,
-      icon: response.data.condition.icon_url,
+      icon_url: response.data.condition.icon_url,
     });
     console.log(response.data);
   }
@@ -68,7 +68,7 @@ export default function Weather(props) {
             <WeatherDetails data={weatherData} />
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-12 p-5">
           <WeatherForecast coordinates={weatherData.coordinates} />
         </div>
       </div>
