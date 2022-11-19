@@ -64,7 +64,7 @@ export default function Weather(props) {
 
         <h2>{weatherData.city}</h2>
         <div className="row">
-          <div className="col-6">
+          <div className="col-s-6">
             <WeatherDetails data={weatherData} />
           </div>
         </div>
