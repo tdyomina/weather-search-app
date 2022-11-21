@@ -62,13 +62,13 @@ export default function Weather(props) {
           </div>
         </form>
 
-        <h2>{weatherData.city}</h2>
+        <h2 className="h2 p-4">{weatherData.city}</h2>
         <div className="row">
           <div className="col-s-6">
             <WeatherDetails data={weatherData} />
           </div>
         </div>
-        <div className="col-12 p-5">
+        <div className="col-12 text-center">
           <WeatherForecast coordinates={weatherData.coordinates} />
         </div>
       </div>
