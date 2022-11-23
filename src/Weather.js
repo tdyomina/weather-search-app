@@ -17,6 +17,7 @@ export default function Weather(props) {
       date: new Date(response.data.time * 1000),
       description: response.data.condition.description,
       wind: response.data.wind.speed,
+      wind_degree: response.data.wind.degree,
       city: response.data.city,
       icon_url: response.data.condition.icon_url,
     });
@@ -54,7 +55,7 @@ export default function Weather(props) {
                 onChange={handleCityChange}
               />
               <div className="input-group-append">
-                <button className="btn btn-outline-secondary" type="button">
+                <button className="btn btn-outline-secondary" type="submit">
                   Search
                 </button>
               </div>

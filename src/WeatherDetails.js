@@ -19,7 +19,7 @@ export default function WeatherDetails(props) {
             <div>
               <WeatherIcon icon_url={props.data.icon_url} />
             </div>
-            <div>
+            <div className="main-temp">
               <WeatherTemperature celsius={props.data.temp} />
             </div>
           </div>
@@ -31,7 +31,13 @@ export default function WeatherDetails(props) {
           </ul>
         </div>
         <div className="col-4">
-          <WindIcon code={props.data.wind} size={52} />
+          <WindIcon
+            style={{
+              transform: `rotate(${props.data.wind_degree}deg)`,
+            }}
+            code={props.data.wind}
+            size={52}
+          />
         </div>
       </div>
     </div>

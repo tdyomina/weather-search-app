@@ -27,6 +27,11 @@
   margin-left: 10px;
 }
 
+.main-temp {
+color: #878787;
+font-size: 45px;
+}
+
 .Weather .unit {
   color: #878787;
   font-size: 16px;
